@@ -20,13 +20,19 @@
 					<folderInfo id="dk.xpg.msp430eclipse.configuration.app.debug.361558999." name="/" resourcePath="">
 						<toolChain id="dk.xpg.msp430eclipse.toolchain.gcc.app.debug.1422740308" name="MSP430 GCC Toolchain" superClass="dk.xpg.msp430eclipse.toolchain.gcc.app.debug">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="dk.xpg.msp430eclipse.targetplatform.msp430.1944912295" isAbstract="false" name="MSP430 Cross-Target" osList="all" superClass="dk.xpg.msp430eclipse.targetplatform.msp430"/>
-							<builder buildPath="${workspace_loc:/Laptop_coolingPad}/Debug" id="dk.xpg.msp430eclipse.target.gnu.builder.1694444984" managedBuildOn="true" name="MSP430 GNU Make Builder.Debug" superClass="dk.xpg.msp430eclipse.target.gnu.builder"/>
+							<builder buildPath="${workspace_loc:/Laptop_coolingPad}/Debug" id="dk.xpg.msp430eclipse.target.gnu.builder.1694444984" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="MSP430 GNU Make Builder" superClass="dk.xpg.msp430eclipse.target.gnu.builder"/>
 							<tool id="dk.xpg.msp430eclipse.tool.compiler.gcc.1051303707" name="MSP430 C Compiler" superClass="dk.xpg.msp430eclipse.tool.compiler.gcc">
-								<option defaultValue="dk.xpg.msp430eclipse.compiler.option.optimization.level.none" id="dk.xpg.msp430eclipse.compiler.option.optimization.level.1347358836" superClass="dk.xpg.msp430eclipse.compiler.option.optimization.level" valueType="enumerated"/>
-								<option defaultValue="dk.xpg.msp430eclipse.compiler.option.debugging.level.default" id="dk.xpg.msp430eclipse.compiler.option.debugging.level.1173051018" superClass="dk.xpg.msp430eclipse.compiler.option.debugging.level" valueType="enumerated"/>
+								<option defaultValue="dk.xpg.msp430eclipse.compiler.option.optimization.level.none" id="dk.xpg.msp430eclipse.compiler.option.optimization.level.1347358836" name="Optimization Level" superClass="dk.xpg.msp430eclipse.compiler.option.optimization.level" valueType="enumerated"/>
+								<option defaultValue="dk.xpg.msp430eclipse.compiler.option.debugging.level.default" id="dk.xpg.msp430eclipse.compiler.option.debugging.level.1173051018" name="Debugging Level" superClass="dk.xpg.msp430eclipse.compiler.option.debugging.level" valueType="enumerated"/>
+								<inputType id="dk.xpg.msp430eclipse.tool.compiler.gcc.input.1210452461" name="C Source File" superClass="dk.xpg.msp430eclipse.tool.compiler.gcc.input"/>
+								<inputType id="dk.xpg.msp430eclipse.tool.compiler.gcc.input.cc.1617906346" name="C++ Source File" superClass="dk.xpg.msp430eclipse.tool.compiler.gcc.input.cc"/>
 							</tool>
-							<tool id="dk.xpg.msp430eclipse.tool.assembler.gcc.991864096" name="MSP430 Assembler" superClass="dk.xpg.msp430eclipse.tool.assembler.gcc"/>
-							<tool id="dk.xpg.msp430eclipse.tool.linker.gcc.1672514747" name="MSP430 Linker" superClass="dk.xpg.msp430eclipse.tool.linker.gcc"/>
+							<tool id="dk.xpg.msp430eclipse.tool.assembler.gcc.991864096" name="MSP430 Assembler" superClass="dk.xpg.msp430eclipse.tool.assembler.gcc">
+								<inputType id="dk.xpg.msp430eclipse.tool.assembler.input.833584998" name="Assembler Files" superClass="dk.xpg.msp430eclipse.tool.assembler.input"/>
+							</tool>
+							<tool id="dk.xpg.msp430eclipse.tool.linker.gcc.1672514747" name="MSP430 Linker" superClass="dk.xpg.msp430eclipse.tool.linker.gcc">
+								<inputType id="dk.xpg.msp430eclipse.tool.linker.input.751397294" name="Object Files" superClass="dk.xpg.msp430eclipse.tool.linker.input"/>
+							</tool>
 							<tool id="dk.xpg.msp430eclipse.tool.archiver.gcc.1735054784" name="MSP430 Archiver" superClass="dk.xpg.msp430eclipse.tool.archiver.gcc"/>
 						</toolChain>
 					</folderInfo>
@@ -57,14 +63,21 @@
 							<tool id="dk.xpg.msp430eclipse.tool.compiler.gcc.391823716" name="MSP430 C Compiler" superClass="dk.xpg.msp430eclipse.tool.compiler.gcc">
 								<option defaultValue="dk.xpg.msp430eclipse.compiler.option.optimization.level.most" id="dk.xpg.msp430eclipse.compiler.option.optimization.level.577313089" superClass="dk.xpg.msp430eclipse.compiler.option.optimization.level" valueType="enumerated"/>
 								<option defaultValue="dk.xpg.msp430eclipse.compiler.option.debugging.level.none" id="dk.xpg.msp430eclipse.compiler.option.debugging.level.1722080863" superClass="dk.xpg.msp430eclipse.compiler.option.debugging.level" valueType="enumerated"/>
+								<inputType id="dk.xpg.msp430eclipse.tool.compiler.gcc.input.1531579569" name="C Source File" superClass="dk.xpg.msp430eclipse.tool.compiler.gcc.input"/>
+								<inputType id="dk.xpg.msp430eclipse.tool.compiler.gcc.input.cc.972241517" name="C++ Source File" superClass="dk.xpg.msp430eclipse.tool.compiler.gcc.input.cc"/>
 							</tool>
-							<tool id="dk.xpg.msp430eclipse.tool.assembler.gcc.1094184422" name="MSP430 Assembler" superClass="dk.xpg.msp430eclipse.tool.assembler.gcc"/>
-							<tool id="dk.xpg.msp430eclipse.tool.linker.gcc.2021660535" name="MSP430 Linker" superClass="dk.xpg.msp430eclipse.tool.linker.gcc"/>
+							<tool id="dk.xpg.msp430eclipse.tool.assembler.gcc.1094184422" name="MSP430 Assembler" superClass="dk.xpg.msp430eclipse.tool.assembler.gcc">
+								<inputType id="dk.xpg.msp430eclipse.tool.assembler.input.1527742086" name="Assembler Files" superClass="dk.xpg.msp430eclipse.tool.assembler.input"/>
+							</tool>
+							<tool id="dk.xpg.msp430eclipse.tool.linker.gcc.2021660535" name="MSP430 Linker" superClass="dk.xpg.msp430eclipse.tool.linker.gcc">
+								<inputType id="dk.xpg.msp430eclipse.tool.linker.input.248289274" name="Object Files" superClass="dk.xpg.msp430eclipse.tool.linker.input"/>
+							</tool>
 							<tool id="dk.xpg.msp430eclipse.tool.archiver.gcc.1394511131" name="MSP430 Archiver" superClass="dk.xpg.msp430eclipse.tool.archiver.gcc"/>
 						</toolChain>
 					</folderInfo>
 				</configuration>
 			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -74,4 +87,5 @@
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
 </cproject>
